@@ -1,0 +1,116 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+@import url("https://cdn.jsdelivr.net/gh/toss/tossface@v1.6/dist/tossface.css");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+
+    font-family: "Pretendard Variable", sans-serif;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.6) url("/health/assets/img/background.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+main {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section h1 {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+section emoji {
+    font-family: "Tossface";
+}
+
+section p,
+footer p {
+    color: #d5d5d5;
+    font-weight: 300;
+    text-align: center;
+    word-break: keep-all;
+}
+
+section p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 45px;
+}
+
+footer img {
+    height: 20px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer div span {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    word-break: keep-all;
+
+    font-family: "Nasalization";
+}
+
+@media (min-width: 630px) {
+    .pc {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 629px) {
+    section h1 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.8em;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
