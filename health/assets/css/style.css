@@ -1,5 +1,5 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
-@import url("https://cdn.jsdelivr.net/gh/toss/tossface@v1.6/dist/tossface.css");
+@import url('https://cdn.jsdelivr.net/gh/toss/tossface@v1.6/dist/tossface.css');
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
 
 html,
 body {
@@ -9,7 +9,7 @@ body {
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
 
-    font-family: "Pretendard Variable", sans-serif;
+    font-family: "Wanted Sans Variable", sans-serif;
 }
 
 body {
@@ -43,58 +43,11 @@ section emoji {
     font-family: "Tossface";
 }
 
-section p,
-footer p {
+section p {
     color: #d5d5d5;
     font-weight: 300;
     text-align: center;
     word-break: keep-all;
-}
-
-section p a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-section p a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    margin-top: 45px;
-}
-
-footer img {
-    height: 20px;
-}
-
-footer div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-footer div span {
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    word-break: keep-all;
-
-    font-family: "Nasalization";
-}
-
-@media (min-width: 630px) {
-    .pc {
-        display: block;
-    }
-
-    .mobile {
-        display: none;
-    }
 }
 
 @media (max-width: 629px) {
@@ -104,13 +57,5 @@ footer div span {
 
     section p {
         font-size: 0.8em;
-    }
-
-    .pc {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
     }
 }
